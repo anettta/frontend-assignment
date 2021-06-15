@@ -1,0 +1,81 @@
+/* .movie-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 1200px;
+  height: 1096px;
+  left: 120px;
+  top: 158px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 1200px;
+  height: 348px;
+  left: 0px;
+  top: 748px;
+}
+.card {
+  position: absolute;
+  display: flex;
+
+  width: 282px;
+  height: 348px;
+  left: 0px;
+  top: 0px;
+
+  /* Navy / 0 */
+/* 
+  background: #ffffff;
+  /* Navy / 400 */
+
+/* border: 1px solid #e1e3e6;
+  box-sizing: border-box;
+  /* box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1); */
+/* border-radius: 8px; */
+
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,212 @@
+/*
+=============== 
+Search
+===============
+*/
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 180px;
+  height: 36px;
+  left: 1140px;
+  top: 20px;
+
+  /* Navy / 0 */
+
+  background: #ffffff;
+  /* Navy / 500 */
+
+  border: 1px solid #c0c4cc;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.form-input {
+  position: static;
+  width: 104px;
+  height: 15px;
+  left: 34px;
+  top: 10px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  outline: none !important;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  /* Navy / 600 */
+
+  color: #898e9a;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+h2 {
+  position: absolute;
+  width: 269px;
+  height: 22px;
+  left: 120px;
+  top: 114px;
+
+  /* H / H3 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  /* or 117% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+
+img .search-icon {
+  position: absolute;
+  left: 4.17%;
+  right: 10.42%;
+  top: 4.17%;
+  bottom: 10.42%;
+
+  /* Navy / 600 */
+
+  /* background: #898e9a; */
+}
+
+/*
+=============== 
+Loading
+===============
+*/
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+}
+
+/*
+=============== 
+Single Movie
+===============
+*/
+
+.single-movie {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  display: grid;
+  gap: 2rem;
+}
+.single-movie img {
+  width: 100%;
+  display: block;
+}
+.single-movie p {
+  max-width: 35em;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+.btn {
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  background: var(--clr-white);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  display: inline-block;
+  margin-top: 0.5rem;
+  letter-spacing: var(--spacing);
+}
+@media screen and (min-width: 992px) {
+  .single-movie {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.page-error {
+  text-align: center;
+  padding: 2rem;
+}
+
+/*
+=============== 
+Modal
+===============
+*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -1;
+}
+/* OPEN/CLOSE MODAL */
+.show-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  /* Modal BG */
+
+  position: absolute;
+  width: 583px;
+  height: 474px;
+  left: 431px;
+  top: 332px;
+
+  /* Navy / 0 */
+
+  background: #ffffff;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 5.5px;
+  right: 5.5px;
+  width: 13px;
+  height: 13px;
+  background: transparent;
+  border: 1px solid #141e35;
+  cursor: pointer;
+}
+
+.movies-in-modal {
+  margin: 0;
+
+  width: 200px;
+  height: 30px;
+}

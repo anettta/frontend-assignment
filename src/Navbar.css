@@ -1,0 +1,19 @@
+.logo {
+  position: absolute;
+  width: 136px;
+  height: 36px;
+  left: 120px;
+  top: 20px;
+}
+
+.logo-bottom-border {
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 120px;
+  top: 77px;
+
+  /* Navy / 500 */
+
+  border: 1px solid #c0c4cc;
+}
