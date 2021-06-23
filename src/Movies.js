@@ -40,12 +40,14 @@ const Movies = () => {
                         />
                       </div>
 
-                      {/* <div className="movie-info"> */}
-                      <h4 className="title">{movieTitle}</h4>
-                      <div className="rating">
-                        <div className="ellipse">{rating}</div>
+                      <div className="movie-info">
+                        <h4 className="title">{movieTitle}</h4>
+                        <div className="rating">
+                          <div className="ellipse">
+                            <p>{rating}</p>
+                          </div>
+                        </div>
                       </div>
-                      {/* </div> */}
                     </article>
                   </div>
                 </div>
