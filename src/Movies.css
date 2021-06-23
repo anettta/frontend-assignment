@@ -112,12 +112,12 @@ p .movie-info {
 .text {
   /* 8.8 */
 
-  position: absolute;
+  /* position: absolute; */
   width: 35px;
   height: 20px;
   left: 14px;
   top: 22px;
-  background-image: url("./ellipse.svg");
+
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
@@ -132,11 +132,10 @@ p .movie-info {
 
   color: #000000;
 }
-
 .ellipse {
   /* Ellipse 1 */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -144,6 +143,7 @@ p .movie-info {
   height: 34px;
   left: 15px;
   top: 15px;
+  /* z-index: 1; */
 
   /* Navy / 0 */
 
@@ -151,6 +151,58 @@ p .movie-info {
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+h4 .title {
+  position: absolute;
+  width: 109px;
+  height: 20px;
+  left: 86px;
+  top: 313px;
+  padding: 10px;
+
+  /* Body 2 / Body 2 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* or 162% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+
+.movie-group {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.movie-group:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.movie-group:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 /* @media screen and (min-width: 576px) {
