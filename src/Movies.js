@@ -21,25 +21,37 @@ const Movies = () => {
         } = movie;
 
         return (
-          <button className="btn" onClick={openModal}>
-            <article key={movie.id} className="movie">
-              <img
-                src={
-                  `https://image.tmdb.org/t/p/w500${poster}` ===
-                  `https://image.tmdb.org/t/p/w500null`
-                    ? url
-                    : `https://image.tmdb.org/t/p/w500${poster}`
-                }
-                alt={movieTitle}
-              />
+          <div className="movie-group">
+            <button className="btn" onClick={openModal}>
+              <div className="row">
+                <div className="card">
+                  <div className="box">
+                    <article key={movie.id} className="movie">
+                      <div className="poster">
+                        <img
+                          className="poster"
+                          src={
+                            `https://image.tmdb.org/t/p/w500${poster}` ===
+                            `https://image.tmdb.org/t/p/w500null`
+                              ? url
+                              : `https://image.tmdb.org/t/p/w500${poster}`
+                          }
+                          alt={movieTitle}
+                        />
+                      </div>
 
-              <div className="movie-info">
-                <h4 className="title">{movieTitle}</h4>
-
-                <p className="rating">{rating}</p>
+                      {/* <div className="movie-info"> */}
+                      <h4 className="title">{movieTitle}</h4>
+                      <div className="rating">
+                        <div className="ellipse">{rating}</div>
+                      </div>
+                      {/* </div> */}
+                    </article>
+                  </div>
+                </div>
               </div>
-            </article>
-          </button>
+            </button>
+          </div>
         );
       })}
     </section>

@@ -44,7 +44,7 @@
   /* box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1); */
 /* border-radius: 8px; */
 
-body {
+/* body {
   background: #141414;
   color: #ffffff;
 }
@@ -52,9 +52,9 @@ body {
 .movie-app > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
-}
+} */
 
-.image-container {
+/* .image-container {
   position: relative;
   transition: transform 0.2s;
 }
@@ -66,7 +66,7 @@ body {
 
 .image-container:hover .overlay {
   opacity: 1;
-}
+} */
 
 .overlay {
   position: absolute;
