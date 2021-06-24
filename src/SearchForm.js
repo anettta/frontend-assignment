@@ -9,7 +9,7 @@ const SearchForm = () => {
 
   return (
     <>
-      <h2>Most Recent Movies</h2>
+      <h2 className="heading">Most Recent Movies</h2>
       <form className="search-form" onSubmit={(e) => e.preventDefault()}>
         <div className="search-icon">
           <img className="search-icon" src={searchIcon} alt="search icon"></img>

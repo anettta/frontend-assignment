@@ -7,6 +7,7 @@ const url =
 
 const Movies = () => {
   const { openModal } = useGlobalContext();
+
   const { movies, isLoading } = useGlobalContext();
   if (isLoading) {
     return <div className="loading"></div>;

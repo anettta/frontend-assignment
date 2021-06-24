@@ -13,6 +13,7 @@ const Modal = () => {
     >
       <div className="modal-container">
         <SingleMovie />
+
         <button className="close-modal-btn" onClick={closeModal}>
           X
         </button>

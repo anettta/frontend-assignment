@@ -21,8 +21,8 @@ Movies
   position: absolute;
   width: 1200px;
   height: 1096px;
-  left: 120px;
-  top: 158px;
+  left: 110px;
+  top: 165px;
 }
 
 .btn {
@@ -47,7 +47,7 @@ Movies
   justify-content: space-between;
   align-items: flex-start;
   width: 282px;
-  height: 348px;
+  height: 360px;
   left: 0px;
   top: 0px;
 
@@ -112,7 +112,7 @@ p .movie-info {
 .text {
   /* 8.8 */
 
-  /* position: absolute; */
+  position: absolute;
   width: 35px;
   height: 20px;
   left: 14px;
@@ -153,7 +153,11 @@ p .movie-info {
   border-radius: 20px;
 }
 
-h4 .title {
+.title h4 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
   position: absolute;
   width: 109px;
   height: 20px;
@@ -170,11 +174,6 @@ h4 .title {
   line-height: 26px;
 
   /* or 162% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: -0.01em;
 
   color: #000000;
 }
