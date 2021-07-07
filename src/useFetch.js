@@ -6,7 +6,7 @@ export const API_MOST_RECENT = `https://api.themoviedb.org/3/movie/now_playing?a
 export const useFetch = (urlParams) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState({ show: false, msg: "" });
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
   const fetchMovies = async (url) => {
     setIsLoading(true);
     try {
