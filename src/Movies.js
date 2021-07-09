@@ -3,12 +3,7 @@ import { useGlobalContext } from "./context";
 import "./Movies.css";
 import SingleMovie from "./SingleMovie";
 
-const url =
-  "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
-
 const Movies = () => {
-  const { openModal } = useGlobalContext();
-
   const { movies, isLoading } = useGlobalContext();
   if (isLoading) {
     return <div className="loading"></div>;

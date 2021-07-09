@@ -1,8 +1,10 @@
 import React from "react";
 
-// import { useGlobalContext } from "./context";
+import { useGlobalContext } from "./context";
 
 // import useFetch from "./useFetch";
+const url =
+  "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
 
 const SingleMovie = ({ movie }) => {
   const {
@@ -11,11 +13,12 @@ const SingleMovie = ({ movie }) => {
     title: movieTitle,
   } = movie;
 
+  // const { openModal } = useGlobalContext();
+
   return (
     <div className="movie-group">
       <button className="btn">
-        {" "}
-        {/*onClick={openModal}*/}
+        {/* onClick={openModal} */}
         <div className="row">
           <div className="card">
             <div className="box">
